@@ -1,0 +1,5 @@
+{
+  "name":"panic-party","version":"0.1.0","private":true,"type":"module",
+  "scripts":{"dev":"concurrently -k -n server,client -c blue,magenta \"npm:dev:server\" \"npm:dev:client\"","dev:server":"npm --prefix server run dev","dev:client":"npm --prefix client run dev","test":"node --test server/test/*.test.js"},
+  "devDependencies":{"concurrently":"^9.1.2"}
+}
